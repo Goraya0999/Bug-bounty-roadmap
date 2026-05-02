@@ -31,7 +31,7 @@ def create_user(user: User):
 
 # -------------------- UPDATE USER (WITH BODY) --------------------
 @app.put("/users/{id}")
-def update_user(id: int, notify: bool = False, user: User):
+def update_user(id: int, user: User,notify: bool = False):
     return {
         "updated_id": id,
         "notify": notify,
