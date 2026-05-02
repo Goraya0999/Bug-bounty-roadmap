@@ -21,8 +21,8 @@ A simple multi-threaded TCP port scanner and banner grabber built with Python.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/fast-banner-scanner.git
-cd fast-banner-scanner
+git clone https://github.com/Goraya0999/Cyber-sec-and-Ai-Api-Dev-journey.git
+cd Cyber-sec-and-Ai-Api-Dev-journey/Cyber-Security/mini-tools/01-fast-banner-scanner
 ```
 
 Install requirements (optional):
