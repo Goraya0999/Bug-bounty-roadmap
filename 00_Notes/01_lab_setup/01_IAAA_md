@@ -1,0 +1,267 @@
+# IAAA and Broken Access Control Notes
+
+---
+
+# What is IAAA?
+
+IAAA stands for:
+
+1. Identification
+2. Authentication
+3. Authorization
+4. Accounting
+
+These are important security concepts used in cybersecurity and web applications.
+
+---
+
+# 1. Identification
+
+Identification means telling the system who you are.
+
+## Example
+
+```text
+Username: shafiq123
+```
+
+The system now knows which user is trying to log in.
+
+---
+
+# 2. Authentication
+
+Authentication checks whether the user is real or not.
+
+Usually done using:
+- Password
+- OTP
+- Fingerprint
+- Face ID
+
+## Example
+
+```text
+Username: shafiq123
+Password: mypass123
+```
+
+If the password is correct, the user is authenticated.
+
+---
+
+# 3. Authorization
+
+Authorization checks what the user is allowed to access after login.
+
+## Example
+
+| User Role | Permission |
+|------------|------------|
+| Admin | Delete users |
+| Student | View courses |
+| Teacher | Upload marks |
+
+A student cannot access admin features.
+
+---
+
+# 4. Accounting
+
+Accounting records user activities.
+
+It stores:
+- Login time
+- Logout time
+- IP address
+- User actions
+
+## Example
+
+```text
+User shafiq123 logged in at 10:30 AM
+Downloaded report.pdf
+Logged out at 11:00 AM
+```
+
+This helps in monitoring and auditing.
+
+---
+
+# What is Broken Access Control?
+
+Broken Access Control happens when users can access resources or data they should not access.
+
+It is one of the most dangerous web vulnerabilities.
+
+---
+
+# Example of Broken Access Control
+
+Suppose a website URL is:
+
+```text
+https://example.com/account/1001
+```
+
+A user changes it to:
+
+```text
+https://example.com/account/1002
+```
+
+If the user can see another person's account information, this is Broken Access Control.
+
+---
+
+# Real-Life Example
+
+A student changes:
+
+```text
+/student/result/15
+```
+
+to:
+
+```text
+/student/result/16
+```
+
+and views another student's result.
+
+This is unauthorized access.
+
+---
+
+# Types of Broken Access Control
+
+## 1. Horizontal Privilege Escalation
+
+One user accesses another user's data.
+
+### Example
+
+User A views User B's profile.
+
+---
+
+## 2. Vertical Privilege Escalation
+
+A normal user gains admin access.
+
+### Example
+
+```text
+/admin/dashboard
+```
+
+---
+
+# What is A07: Authentication Failures?
+
+A07 is part of the OWASP Top 10 vulnerabilities.
+
+It refers to weak authentication and login security.
+
+Attackers can:
+- Steal passwords
+- Bypass login systems
+- Hijack user accounts
+
+---
+
+# Common Authentication Issues
+
+## 1. Weak Passwords
+
+### Bad Example
+
+```text
+123456
+password
+admin
+```
+
+These passwords are easy to guess.
+
+---
+
+## 2. No Multi-Factor Authentication (MFA)
+
+Using only passwords is weak security.
+
+### Better Security
+
+- Password + OTP
+- Password + Fingerprint
+
+---
+
+## 3. Password Stored in Plain Text
+
+### Wrong Method
+
+```text
+password = "mypassword123"
+```
+
+If the database leaks, attackers can see passwords.
+
+### Correct Method
+
+Store hashed passwords instead of plain text passwords.
+
+---
+
+## 4. Brute Force Attack
+
+Attackers try many passwords repeatedly.
+
+## Example
+
+```text
+admin123
+admin1234
+admin@123
+```
+
+---
+
+## 5. Session Hijacking
+
+Attackers steal session cookies and access accounts without passwords.
+
+---
+
+# Prevention Methods
+
+## Preventing Broken Access Control
+
+- Check user permissions properly
+- Use role-based access control
+- Deny access by default
+- Validate every request on the server side
+
+---
+
+## Preventing Authentication Failures
+
+- Use strong passwords
+- Enable MFA
+- Hash passwords
+- Limit login attempts
+- Use secure session management
+
+---
+
+# Short Summary
+
+| Topic | Meaning |
+|--------|---------|
+| Identification | Who are you? |
+| Authentication | Prove your identity |
+| Authorization | What can you access? |
+| Accounting | Record user activities |
+| Broken Access Control | Unauthorized access to data |
+| A07 Authentication Failures | Weak login/authentication security |
