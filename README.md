@@ -1,159 +1,226 @@
-# 🐞 Bug Bounty Roadmap
+# 🛡️ Cybersecurity Learning Journey
 
-A complete self-study roadmap for learning Bug Bounty Hunting, Web Security, and Ethical Hacking from beginner to advanced level.
-
----
-
-# 📌 Goal
-
-Learn how to:
-- Find web vulnerabilities
-- Perform reconnaissance
-- Understand web technologies
-- Practice legal ethical hacking
-- Write professional bug reports
-- Participate in bug bounty programs
+> A structured 1-year self-study path covering Linux, Networking, CEH, SOC, and more.
+> Notes, labs, tools, and writeups uploaded as I learn — built in public.
 
 ---
 
-# 🛠️ Skills Covered
+## 👤 About This Repository
 
-## Phase 1 — Basics
-- Linux Fundamentals
-- Networking Basics
-- HTTP/HTTPS
-- DNS
-- Command Line Usage
-- Git & GitHub
+This repo documents my hands-on cybersecurity learning journey from fundamentals to job-ready skills.
+Every folder contains real notes, commands, and mini labs — not just theory.
 
-## Phase 2 — Web Fundamentals
-- HTML
-- CSS
-- JavaScript Basics
-- Cookies & Sessions
-- APIs
-- Authentication & Authorization
+**Goal:** Build a strong foundation across offensive and defensive security within 12 months.
 
-## Phase 3 — Security Fundamentals
-- OWASP Top 10
-- Common Vulnerabilities
-- Security Misconfigurations
-- Input Validation
-- Access Control
-
-## Phase 4 — Reconnaissance
-- Subdomain Enumeration
-- Directory Bruteforcing
-- Google Dorking
-- Information Gathering
-- Technology Fingerprinting
-
-### Tools
-- Nmap
-- Subfinder
-- Amass
-- WhatWeb
-- Wappalyzer
-- Burp Suite
-- ffuf
-- dirsearch
-
-## Phase 5 — Vulnerability Hunting
-- XSS
-- SQL Injection
-- IDOR
-- SSRF
-- CSRF
-- File Upload Vulnerabilities
-- Authentication Bypass
-- Command Injection
-
-## Phase 6 — Automation & Scripting
-- Python Basics
-- Bash Scripting
-- Automation for Recon
-- API Interaction
-
-## Phase 7 — Real Practice
-- PortSwigger Web Security Academy
-- TryHackMe
-- Hack The Box
-- CTF Challenges
-- Bug Bounty Platforms
+**Current Stage:** 🟢 Active — uploading notes regularly
 
 ---
 
-# 🌐 Recommended Platforms
+## 📁 Repository Structure
 
-- HackerOne
-- Bugcrowd
-- Intigriti
-- Synack
-- YesWeHack
-
----
-
-# 📚 Learning Resources
-
-## Free Resources
-- PortSwigger Academy
-- OWASP Web Security Testing Guide
-- TryHackMe Free Rooms
-- YouTube Cybersecurity Channels
-
-## Documentation
-- OWASP
-- MDN Web Docs
-- HackTricks
-
----
-
-# 🧪 Practice Workflow
-
-1. Reconnaissance
-2. Identify attack surface
-3. Test manually
-4. Use automation carefully
-5. Validate vulnerability
-6. Write professional report
-
----
-
-# 📝 Notes
-
-- Always hack legally
-- Read program scope carefully
-- Avoid destructive testing
-- Focus on learning consistency
-- Document everything
+```
+Cyber-Security/
+│
+├── 01-Linux-Fundamentals/
+│   ├── notes/
+│   ├── commands-cheatsheet.md
+│   └── labs/
+│
+├── 02-Networking-Fundamentals/
+│   ├── notes/
+│   ├── protocols-cheatsheet.md
+│   └── labs/
+│
+├── 03-CEH-Preparation/
+│   ├── notes/
+│   ├── module-summaries/
+│   └── practice-questions/
+│
+├── 04-SOC-Analyst/
+│   ├── notes/
+│   ├── tools/
+│   └── labs/
+│
+├── 05-Tools-and-Practice/
+│   ├── wireshark/
+│   ├── nmap/
+│   ├── metasploit/
+│   └── burpsuite/
+│
+└── resources.md
+```
 
 ---
 
-# 🎯 Long-Term Goals
+## 🗓️ 1-Year Roadmap
 
-- Build strong web security knowledge
-- Earn bug bounty rewards
-- Learn advanced exploitation
-- Transition into penetration testing or cybersecurity roles
+### Phase 1 — Foundations (Month 1–2)
+**Linux Fundamentals**
 
----
+| Topic | Status |
+|-------|--------|
+| File system and navigation | ⬜ |
+| Users, permissions, and groups | ⬜ |
+| Processes and services | ⬜ |
+| Networking commands (ifconfig, netstat, ss) | ⬜ |
+| Bash scripting basics | ⬜ |
+| Package management (apt, yum) | ⬜ |
+| Log analysis basics | ⬜ |
 
-# 🚀 Progress Tracking
-
-- [ ] Linux Basics
-- [ ] Networking
-- [ ] Web Fundamentals
-- [ ] OWASP Top 10
-- [ ] Burp Suite
-- [ ] Recon Automation
-- [ ] Vulnerability Hunting
-- [ ] Report Writing
-- [ ] First Valid Bug
-- [ ] First Bounty Reward
+> 📂 Notes → [`01-Linux-Fundamentals/`](./01-Linux-Fundamentals/)
 
 ---
 
-# ⚠️ Disclaimer
+### Phase 2 — Networking (Month 2–3)
+**Networking Fundamentals**
 
-This repository is for educational and ethical purposes only.  
-Do not test systems without proper authorization.
+| Topic | Status |
+|-------|--------|
+| OSI and TCP/IP models | ⬜ |
+| IP addressing and subnetting | ⬜ |
+| DNS, DHCP, HTTP, HTTPS, FTP | ⬜ |
+| Firewalls and proxies | ⬜ |
+| Wireshark packet analysis | ⬜ |
+| Nmap scanning basics | ⬜ |
+| VPNs and tunneling | ⬜ |
+
+> 📂 Notes → [`02-Networking-Fundamentals/`](./02-Networking-Fundamentals/)
+
+---
+
+### Phase 3 — Ethical Hacking (Month 3–6)
+**CEH — Certified Ethical Hacker**
+
+| Module | Topic | Status |
+|--------|-------|--------|
+| 01 | Introduction to Ethical Hacking | ⬜ |
+| 02 | Footprinting and Reconnaissance | ⬜ |
+| 03 | Scanning Networks | ⬜ |
+| 04 | Enumeration | ⬜ |
+| 05 | Vulnerability Analysis | ⬜ |
+| 06 | System Hacking | ⬜ |
+| 07 | Malware Threats | ⬜ |
+| 08 | Sniffing | ⬜ |
+| 09 | Social Engineering | ⬜ |
+| 10 | Denial of Service | ⬜ |
+| 11 | Session Hijacking | ⬜ |
+| 12 | Web Application Hacking | ⬜ |
+| 13 | SQL Injection | ⬜ |
+| 14 | Hacking Wireless Networks | ⬜ |
+| 15 | Cryptography | ⬜ |
+
+> 📂 Notes → [`03-CEH-Preparation/`](./03-CEH-Preparation/)
+
+---
+
+### Phase 4 — Defensive Security (Month 6–9)
+**SOC Analyst — Level 1**
+
+| Topic | Status |
+|-------|--------|
+| What is a SOC and how it works | ⬜ |
+| SIEM basics (Splunk / ELK) | ⬜ |
+| Log analysis and correlation | ⬜ |
+| Incident detection and triage | ⬜ |
+| Threat intelligence fundamentals | ⬜ |
+| Alert handling and escalation | ⬜ |
+| IOCs and threat hunting basics | ⬜ |
+| MITRE ATT&CK framework | ⬜ |
+
+> 📂 Notes → [`04-SOC-Analyst/`](./04-SOC-Analyst/)
+
+---
+
+### Phase 5 — Tools Deep Dive (Month 9–11)
+**Hands-on with Security Tools**
+
+| Tool | Purpose | Status |
+|------|---------|--------|
+| Wireshark | Packet analysis | ⬜ |
+| Nmap | Network scanning | ⬜ |
+| Metasploit | Exploitation framework | ⬜ |
+| Burp Suite | Web app testing | ⬜ |
+| Nikto | Web vulnerability scanner | ⬜ |
+| Hydra | Password cracking | ⬜ |
+| John the Ripper | Hash cracking | ⬜ |
+
+> 📂 Notes → [`05-Tools-and-Practice/`](./05-Tools-and-Practice/)
+
+---
+
+### Phase 6 — Consolidation and Portfolio (Month 11–12)
+
+- [ ] Complete TryHackMe learning paths (Pre-Security → SOC Level 1)
+- [ ] Complete 5+ CTF (Capture the Flag) challenges
+- [ ] Write 3 detailed lab writeups
+- [ ] Build a home lab (VirtualBox / VMware setup)
+- [ ] Prepare CV and cybersecurity portfolio summary
+
+---
+
+## 📊 Overall Progress
+
+| Phase | Area | Progress |
+|-------|------|----------|
+| 1 | Linux Fundamentals | ⬜ Not Started |
+| 2 | Networking Fundamentals | ⬜ Not Started |
+| 3 | CEH Preparation | ⬜ Not Started |
+| 4 | SOC Analyst | ⬜ Not Started |
+| 5 | Tools Practice | ⬜ Not Started |
+| 6 | Portfolio and CTFs | ⬜ Not Started |
+
+> Status key: ⬜ Not Started &nbsp;|&nbsp; 🟡 In Progress &nbsp;|&nbsp; ✅ Complete
+
+---
+
+## 🧰 Tools and Platforms Used
+
+| Tool / Platform | Purpose |
+|-----------------|---------|
+| [TryHackMe](https://tryhackme.com) | Guided learning labs |
+| [Hack The Box](https://hackthebox.com) | CTF and machines |
+| [VirtualBox](https://virtualbox.org) | Local lab environment |
+| Kali Linux | Penetration testing OS |
+| Wireshark | Packet analysis |
+| Nmap | Network scanning |
+| Splunk Free | SIEM practice |
+| Burp Suite Community | Web app testing |
+
+---
+
+## 📚 Resources
+
+See [`resources.md`](./resources.md) for the full list of books, courses, YouTube channels, and cheat sheets I use throughout this journey.
+
+---
+
+## 📌 Notes Format
+
+Each topic folder follows this structure:
+
+```
+topic-name/
+├── notes.md          ← Main notes (concepts, explanations)
+├── commands.md       ← Quick reference commands
+├── lab-report.md     ← What I practiced and what I learned
+└── screenshots/      ← Lab evidence (optional)
+```
+
+---
+
+## 🔗 Related Repository
+
+This is part of a dual-track learning portfolio:
+
+> 🤖 [Cyber-sec-and-Ai-Api-Dev-journey](https://github.com/your-username/Cyber-sec-and-Ai-Api-Dev-journey) — AI + API development track running in parallel
+
+---
+
+## ⚠️ Disclaimer
+
+All content in this repository is strictly for **educational purposes**.
+Labs and tools are practiced in controlled, legal environments only (TryHackMe, personal VMs, CTF platforms).
+
+---
+
+*Started: 2025 &nbsp;|&nbsp; Target completion: 2026 &nbsp;|&nbsp; Built in public — learning every day.*
